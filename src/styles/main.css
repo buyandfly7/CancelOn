@@ -1,0 +1,120 @@
+/* 1 Main layout*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+input:focus,
+*:focus {
+  outline: none !important; }
+
+mark {
+  background: none;
+  padding: 0;
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-top: 0; }
+
+a {
+  outline: none !important;
+  -webkit-transition: color 0.3s, background 0.3s, opacity 0.3s, border 0.3s;
+  -moz-transition: color 0.3s, background 0.3s, opacity 0.3s, border 0.3s;
+  -o-transition: color 0.3s, background 0.3s, opacity 0.3s, border 0.3s;
+  transition: color 0.3s, background 0.3s, opacity 0.3s, border 0.3s; }
+
+a:active,
+a:visited {
+  text-decoration: none; }
+
+ul, ol {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+.clear {
+  clear: both; }
+
+header:after,
+.row:after,
+ul.list-company:after,
+ul.team-ul:after,
+.social-wr:after,
+.contact-left ul li:after,
+.section-option:after,
+.ch-select:after,
+.nav-page .select-block:after,
+ul.ul-about:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  display: block;
+  clear: both; }
+
+/* end of Main layout*/
+/* 2 Bootstrap override */
+.navbar {
+  min-height: 108px; }
+
+.navbar-default {
+  background-image: url("../images/navbar-bg.png");
+  background-size: cover; }
+  .navbar-default .navbar-nav .open a, .navbar-default .navbar-nav .open a:focus, .navbar-default .navbar-nav .open a:hover {
+    background-color: transparent;
+    color: #55c1ff; }
+  .navbar-default .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .3em;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent; }
+  .navbar-default .navbar-text {
+    color: #ffffff;
+    margin-top: 43px;
+    margin-bottom: 43px; }
+
+.navbar-toggle {
+  float: right; }
+
+.navbar-right {
+  margin-right: 0; }
+
+.dropdown-item {
+  color: #000; }
+
+.nav .open a, .nav .open a:focus, .nav .open a:hover {
+  background-color: transparent;
+  color: #55c1ff; }
+
+.navbar-brand {
+  height: auto;
+  padding: 20px 15px; }
+
+.navbar-default .navbar-nav li a {
+  color: #ffffff; }
+.navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
+  color: #55c1ff; }
+
+.container {
+  min-width: 1440px; }
+
+/* end of Bootstrap override */
+/* 3 fonts */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; }
+
+.small-text {
+  font-size: 12px; }
+
+.extra-small {
+  font-size: 10px; }
+
+/* end of fonts */
+/* 4 Buttons */
+/* end of Buttons */
+
+/*# sourceMappingURL=main.css.map */

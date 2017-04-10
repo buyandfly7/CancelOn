@@ -68,34 +68,44 @@ ul.ul-about:after {
   background-size: cover;
 }
 
+.navbar-default .navbar-nav .open a, .navbar-default .navbar-nav .open a:focus, .navbar-default .navbar-nav .open a:hover {
+  background-color: transparent;
+  color: #55c1ff;
+}
+
+.navbar-default .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .3em;
+  vertical-align: middle;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-left: .3em solid transparent;
+}
+
 .navbar-default .navbar-text {
   color: #ffffff;
   margin-top: 43px;
   margin-bottom: 43px;
 }
 
-#navbar {
-  float: right;
-}
-
-#navbar .navtop,
-#navbar .navbottom {
-  width: 80%;
-  text-align: right;
-  float: right;
-}
-
-#navbar .navtop li,
-#navbar .navbottom li {
-  float: right;
-}
-
-.navbar-header {
-  width: 50%;
-}
-
 .navbar-toggle {
   float: right;
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.dropdown-item {
+  color: #000;
+}
+
+.nav .open a, .nav .open a:focus, .nav .open a:hover {
+  background-color: transparent;
+  color: #55c1ff;
 }
 
 .navbar-brand {
@@ -109,6 +119,10 @@ ul.ul-about:after {
 
 .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
   color: #55c1ff;
+}
+
+.container {
+  min-width: 1440px;
 }
 
 /* end of Bootstrap override */
@@ -127,3 +141,5 @@ body {
 }
 
 /* end of fonts */
+/* 4 Buttons */
+/* end of Buttons */
