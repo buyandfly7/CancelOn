@@ -1,0 +1,44 @@
+.navbar{
+  min-height: 108px;
+}
+.navbar-default{
+  background-image: url('../images/navbar-bg.png');
+  background-size: cover;
+  .navbar-text{
+    color: #ffffff;
+    margin-top: 43px;
+    margin-bottom: 43px;
+  }
+}
+#navbar{
+  float:right;
+  .navtop,
+  .navbottom{
+    width:80%;
+    text-align:right;
+    float:right;
+    li{
+      float:right;
+    }
+  }
+}
+.navbar-header{
+  width:50%
+}
+.navbar-toggle{
+  float:right;
+}
+.navbar-brand{
+  height: auto;
+  padding: 20px 15px;
+}
+.navbar-default .navbar-nav {
+  li{
+    a{
+      color: #ffffff;
+    }
+    a:focus, a:hover{
+      color: #55c1ff;
+    }
+  }
+}
