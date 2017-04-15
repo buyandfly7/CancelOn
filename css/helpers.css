@@ -39,6 +39,7 @@
 }
 
 .list-item {
+  font-family: "Roboto", sans-serif !important;
   width: 99%;
   float: left;
   cursor: pointer;
@@ -61,7 +62,12 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
+.check {
+  font-family: "Roboto", sans-serif !important;
+}
+
 .grid-item {
+  font-family: "Roboto", sans-serif !important;
   width: 49%;
   float: left;
   cursor: pointer;
@@ -249,7 +255,7 @@ i.fa-dot-circle-o {
   margin: 15px auto;
 }
 
-.exclusive img {
+.exclusive .img-responsive {
   width: 100%;
 }
 
@@ -289,6 +295,14 @@ footer .input-group button {
   width: 150px;
   background-color: #96a4af;
   color: #ffffff;
+}
+
+footer a {
+  font-size: 14px !important;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
 }
 
 footer .form-control {
@@ -337,11 +351,16 @@ footer .navbar-text {
 
 footer .widget-container h1 {
   color: #ffffff;
-  font-size: 26pt;
+  font-size: 26px;
 }
 
 footer .widget-container li a {
   color: #ffffff;
+  font-size: 12px !important;
+}
+
+footer .widget-container li a:hover {
+  text-decoration: underline !important;
 }
 
 aside .checkbox input[type="checkbox"] {
@@ -362,12 +381,14 @@ aside .checkbox label {
   padding-left: 5px;
 }
 
-aside .checkbox label::before {
+aside .checkbox label::after {
   content: "";
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 0;
-  margin-left: 170px;
+  float: right;
+  margin-left: 100%;
+  margin-top: -18px;
   width: 17px;
   height: 17px;
   border: 1px solid #cccccc;
@@ -377,7 +398,7 @@ aside .checkbox label::before {
   transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-aside .checkbox label::after {
+aside .checkbox label::before {
   display: inline-block;
   position: absolute;
   width: 16px;
@@ -395,13 +416,13 @@ aside .checkbox input[type="checkbox"] {
   opacity: 0;
 }
 
-aside .checkbox input[type="checkbox"]:focus + label::before {
+aside .checkbox input[type="checkbox"]:focus + label::after {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-aside .checkbox input[type="checkbox"]:checked + label::after {
+aside .checkbox input[type="checkbox"]:checked + label::before {
   font-family: 'FontAwesome';
   content: "";
 }
@@ -410,12 +431,12 @@ aside .checkbox input[type="checkbox"]:disabled + label {
   opacity: 0.65;
 }
 
-aside .checkbox input[type="checkbox"]:disabled + label::before {
+aside .checkbox input[type="checkbox"]:disabled + label::after {
   background-color: #eeeeee;
   cursor: not-allowed;
 }
 
-aside .checkbox.checkbox-circle label::before {
+aside .checkbox.checkbox-circle label::after {
   border-radius: 50%;
 }
 
@@ -423,48 +444,48 @@ aside .checkbox.checkbox-inline {
   margin-top: 0;
 }
 
-aside .checkbox-primary input[type="checkbox"]:checked + label::before {
+aside .checkbox-primary input[type="checkbox"]:checked + label::after {
   background-color: #428bca;
   border-color: #428bca;
 }
 
-aside .checkbox-primary input[type="checkbox"]:checked + label::after {
+aside .checkbox-primary input[type="checkbox"]:checked + label::before {
   color: #fff;
 }
 
-aside .checkbox-danger input[type="checkbox"]:checked + label::before {
+aside .checkbox-danger input[type="checkbox"]:checked + label::after {
   background-color: #d9534f;
   border-color: #d9534f;
 }
 
-aside .checkbox-danger input[type="checkbox"]:checked + label::after {
+aside .checkbox-danger input[type="checkbox"]:checked + label::before {
   color: #fff;
 }
 
-aside .checkbox-info input[type="checkbox"]:checked + label::before {
+aside .checkbox-info input[type="checkbox"]:checked + label::after {
   background-color: #5bc0de;
   border-color: #5bc0de;
 }
 
-aside .checkbox-info input[type="checkbox"]:checked + label::after {
+aside .checkbox-info input[type="checkbox"]:checked + label::before {
   color: #fff;
 }
 
-aside .checkbox-warning input[type="checkbox"]:checked + label::before {
+aside .checkbox-warning input[type="checkbox"]:checked + label::after {
   background-color: #f0ad4e;
   border-color: #f0ad4e;
 }
 
-aside .checkbox-warning input[type="checkbox"]:checked + label::after {
+aside .checkbox-warning input[type="checkbox"]:checked + label::before {
   color: #fff;
 }
 
-aside .checkbox-success input[type="checkbox"]:checked + label::before {
+aside .checkbox-success input[type="checkbox"]:checked + label::after {
   background-color: #5cb85c;
   border-color: #5cb85c;
 }
 
-aside .checkbox-success input[type="checkbox"]:checked + label::after {
+aside .checkbox-success input[type="checkbox"]:checked + label::before {
   color: #fff;
 }
 

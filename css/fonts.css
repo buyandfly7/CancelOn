@@ -2,6 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.extra-small {
+  font-size: 10px;
+}
+
+.big-text {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 13px;
 }
 
 .big-text {
@@ -12,15 +33,15 @@ body {
 
 .large {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17pt;
+  font-size: 17px;
 }
 
 .regular-text {
-  font-size: 14pt;
+  font-size: 14px;
 }
 
 .red-price {
-  font-size: 12pt;
+  font-size: 12px;
   color: #dc3b41;
   text-align: right;
   font-family: 'Rubik', sans-serif;
@@ -30,7 +51,7 @@ body {
   font-weight: bold;
   font-family: 'Rubik', sans-serif;
   color: #94b747;
-  font-size: 14pt;
+  font-size: 14px;
   text-align: right;
 }
 
@@ -38,7 +59,7 @@ body {
   font-weight: bold;
   font-family: 'Rubik', sans-serif;
   color: #ff383f;
-  font-size: 14pt;
+  font-size: 14px;
   text-align: right;
   text-decoration: line-through;
 }
