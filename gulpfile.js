@@ -50,7 +50,7 @@ var path = {
     js_bootstrap: folders.src + 'js/bootstrap.js',
     js_ds_custom: folders.src + 'js/ds-custom.js',
     js_ds_plugins: folders.src + 'js/ds-plugins.js',
-    js_ds_scripts: folders.src + 'js/ds-scripts.js',
+    js_ds_scripts: folders.src + 'js/**/*.js',
     //css
     css: folders.src + 'styles/**/*.scss',
     style_template: folders.src + 'styles/template.scss',

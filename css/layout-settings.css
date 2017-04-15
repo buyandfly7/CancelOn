@@ -3,6 +3,10 @@ input:focus,
   outline: none !important;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
 mark {
   background: none;
   padding: 0;
@@ -15,14 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  text-decoration: none !important;
   outline: none !important;
   -webkit-transition: color 0.3s, background 0.3s, opacity 0.3s, border 0.3s;
   transition: color 0.3s, background 0.3s, opacity 0.3s, border 0.3s;
 }
 
 a:active,
-a:visited {
-  text-decoration: none;
+a:visited,
+a:hover {
+  text-decoration: none !important;
 }
 
 ul, ol {

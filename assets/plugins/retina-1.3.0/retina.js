@@ -50,7 +50,7 @@
             var images = document.getElementsByTagName('img'), retinaImages = [], i, image;
             for (i = 0; i < images.length; i += 1) {
                 image = images[i];
-                if (!!!image.getAttributeNode('data-no-retina')) {
+                if (!!!image.getAttribute('data-no-retina')) {
                     retinaImages.push(new RetinaImage(image));
                 }
             }

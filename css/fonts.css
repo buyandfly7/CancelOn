@@ -1,13 +1,44 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
 }
 
-.small-text {
-  font-size: 12px;
+.big-text {
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
 }
 
-.extra-small {
-  font-size: 10px;
+.large {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17pt;
+}
+
+.regular-text {
+  font-size: 14pt;
+}
+
+.red-price {
+  font-size: 12pt;
+  color: #dc3b41;
+  text-align: right;
+  font-family: 'Rubik', sans-serif;
+}
+
+.price {
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: #94b747;
+  font-size: 14pt;
+  text-align: right;
+}
+
+.price-red {
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: #ff383f;
+  font-size: 14pt;
+  text-align: right;
+  text-decoration: line-through;
 }
