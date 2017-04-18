@@ -363,6 +363,13 @@ footer .widget-container li a:hover {
   text-decoration: underline !important;
 }
 
+aside {
+  background-color: #ffffff;
+  width: 14.7%;
+  margin-left: 15px;
+  float: left;
+}
+
 aside .checkbox input[type="checkbox"] {
   right: 0;
 }
@@ -640,4 +647,22 @@ aside .radio-success input[type="radio"]:checked + label::after {
 
 .languages a:hover {
   color: #55c1ff;
+}
+
+.filter-top {
+  height: 55px;
+  padding-top: 18px;
+  margin-top: -10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.filter-top .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  padding: 3px 0px 6px 0px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.filter-top .big-text {
+  margin-left: -5px;
 }

@@ -65,7 +65,7 @@
 
 <body>
 <nav class="navbar navbar-default mb-0">
-	<div class="container-fluid">
+	<div class="container pr-0">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">
 				<img alt="logo" class="img-responsive" src="images/logo.png">
@@ -73,11 +73,11 @@
 			<p class="navbar-text small-text"><i class="fa fa-info-circle" aria-hidden="true"></i>
 				Sell and Buy Non-Refundable Hotel Reservations</p>
 		</div>
-		<div class="col-md-6 pull-right">
+		<div class="col-md-6 pull-right pr-0">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#"><i class="fa fa-map" aria-hidden="true"></i> Explore</a></li>
 				<li class="dropdown show">
-					<a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="dropdown-toggle mnr-10" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<i class="fa fa-user" aria-hidden="true"></i>
 						Sign In
 					</a>
@@ -116,7 +116,7 @@
 						</div>
 					</div></li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right down-menu">
 				<li><a class="blue-btn" href="#">Unlock special prices</a></li>
 				<li><a class="green-btn" href="#">Buy hotel reservation</a></li>
 				<li><a href="#">About</a></li>
@@ -128,12 +128,14 @@
 </nav>
 
 <div class="container-fluid white">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-3 pt-40">
+			<div class="col-md-3 pt-35 pl-0">
 				<div class="col-md-6">
 					<div class="form-group">
 						<div class="input-group input-group-white"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 							<input type="text" class="form-control datepicker-input" placeholder="Date">
+							<b class="carret"></b>
 						</div>
 					</div>
 				</div>
@@ -180,7 +182,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 pl-0 mnl-10">
 				<div class="input-group">
 					<span class="search-icon"></span>
 					<input type="text" class="form-control input-search" placeholder="Search for...">
@@ -192,12 +194,13 @@
 		</div>
 
 	</div>
+</div>
 
-<div class="container-fluid mt-15 mr-15 ml-15">
-	<div class="row pt-10 white">
-		<div class="col-md-2">
-				<p class="big-text">Search Filter
-					<a class="pull-right mt-5" href="#"><span class="menu-icon"></span></a>
+<div class="container mt-25 pl-10 pr-10">
+	<div class="filter-top white">
+		<div class="col-md-2 pr-35">
+				<p class="big-text mnl-5">Search Filter
+					<a class="pull-right" href="#"><span class="menu-icon"></span></a>
 				</p>
 		</div>
 		<div class="col-md-10">
@@ -210,7 +213,7 @@
 				<option>High to Low</option>
 				<option>Newest</option>
 			</select>
-			<p class="pull-left ml-10">Available 471 Of 471</p>
+			<p class="avail">Available 471 Of 471</p>
 			<div class="onoffswitch pull-right">
 				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
 				<label class="onoffswitch-label" for="myonoffswitch">
@@ -223,8 +226,8 @@
 	</div>
 </div>
 
-<div class="container-fluid pl-15 pr-15">
-	<aside class="col-md-2 pl-0 pr-0 white">
+<div class="container pl-0 pr-0">
+	<aside>
 		<div class="panel-group mb-0">
 			<div class="panel panel-default">
 				<div class="panel-heading">

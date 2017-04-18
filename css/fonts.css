@@ -10,7 +10,8 @@ body {
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 12.1px;
+  font-weight: 200;
 }
 
 .extra-small {
@@ -27,7 +28,7 @@ body {
 
 .big-text {
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 
@@ -44,12 +45,12 @@ body {
   font-size: 12px;
   color: #dc3b41;
   text-align: right;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .price {
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #94b747;
   font-size: 14px;
   text-align: right;
@@ -57,7 +58,7 @@ body {
 
 .price-red {
   font-weight: bold;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #ff383f;
   font-size: 14px;
   text-align: right;
