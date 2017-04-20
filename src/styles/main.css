@@ -155,6 +155,13 @@ ul.ul-about:after {
 @media screen and (min-width: 1620px) {
   .container {
     width: 1560px !important; } }
+@media screen and (min-width: 1400px) and (max-width: 1619px) {
+  footer .container {
+    width: 1170px !important; } }
+@media screen and (min-width: 1620px) {
+  footer .container {
+    width: 1170px !important; } }
+
 .input-group-addon {
   background-color: #ffffff;
   border-right: none !important;
@@ -301,8 +308,15 @@ ul.ul-about:after {
   background-color: #d1d7e0 !important;
   padding: 17px 15px; }
 
-.panel-title i {
-  float: right; }
+.panel-title {
+  font-weight: bold; }
+  .panel-title i {
+    float: right;
+    font-size: 21px;
+    margin-right: 2px; }
+
+.panel-body {
+  padding: 10px; }
 
 .panel-default {
   border: none; }
@@ -311,22 +325,20 @@ ul.ul-about:after {
   background: #85b83a;
   border-radius: 50%;
   border: none;
-  width: 18px;
-  height: 18px;
-  cursor: pointer; }
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  margin-top: -2px; }
 
 .ui-widget.ui-widget-content {
   border: none;
-  height: 5px;
-  background-color: #55c1ff; }
+  height: 2px;
+  background-color: #55c1ff;
+  margin-top: 40px;
+  margin-bottom: 11px; }
 
 .ui-slider .ui-slider-range {
   background: #85b83a; }
-
-#amount {
-  color: #000 !important;
-  font-weight: normal !important;
-  width: 100%; }
 
 /* end of Bootstrap override */
 /* 3 fonts */
@@ -386,6 +398,15 @@ h3 {
   font-size: 14px;
   text-align: right;
   text-decoration: line-through; }
+
+.copy {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #7a818e;
+  font-family: 'Montserat', sans-serif; }
 
 /* end of fonts */
 /* 4 Buttons */
@@ -6120,6 +6141,9 @@ h3 {
 .navy {
   background-color: #242830; }
 
+.black {
+  background-color: #000000; }
+
 .underline {
   text-decoration: underline !important; }
 
@@ -6191,7 +6215,7 @@ h3 {
     display: inline-block;
     float: left; }
     .stars li i.fa-star {
-      color: #e39d47;
+      color: #f99e3e;
       font-size: 14px;
       margin-left: 1px;
       margin-right: 3px; }
@@ -6263,7 +6287,7 @@ i.fa-dot-circle-o {
   margin-right: 15px;
   float: right;
   height: 100%;
-  min-height: 1200px;
+  min-height: 1500px;
   background-color: grey; }
 
 .divider {
@@ -6361,38 +6385,82 @@ footer {
       color: #9d9d9d; }
   footer .social {
     float: right;
-    margin-top: 40px; }
+    margin-top: 25px;
+    margin-right: 8px; }
     footer .social li {
       float: left;
       border: 2px solid #00b9f1;
-      width: 30px;
+      width: 43px;
       text-align: center;
       border-radius: 50%;
       padding: 2px;
-      margin: 7px; }
+      margin: 3.9px;
+      font-size: 23px; }
       footer .social li:hover {
         background-color: #00b9f1; }
       footer .social li a {
+        font-size: 23px;
         padding: 3px; }
         footer .social li a i {
+          font-size: 23px;
           color: #ffffff; }
   footer .navbar-text {
     color: #ffffff;
-    margin-top: 40px; }
+    margin-top: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Montserat', sans-serif; }
   footer .widget-container h1 {
     color: #ffffff;
     font-size: 26px; }
-  footer .widget-container li a {
-    color: #ffffff;
-    font-size: 12px !important; }
-    footer .widget-container li a:hover {
-      text-decoration: underline !important; }
+  footer .widget-container li {
+    padding-top: 7px;
+    padding-bottom: 7px; }
+    footer .widget-container li a {
+      color: #ffffff;
+      font-size: 14px; }
+      footer .widget-container li a:hover {
+        text-decoration: underline !important; }
+  footer .navy .widget-container li {
+    padding-top: 0;
+    padding-bottom: 0; }
+    footer .navy .widget-container li a {
+      color: #b8b8b8;
+      font-size: 12px !important; }
+      footer .navy .widget-container li a:hover {
+        text-decoration: underline !important; }
 
 aside {
+  font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   width: 14.7%;
   margin-left: 15px;
   float: left; }
+  aside #amount1 {
+    float: left;
+    width: 46%;
+    color: #000000 !important;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    padding: 5px;
+    text-align: center;
+    margin: -5px;
+    margin-left: -4px;
+    margin-top: 11px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px; }
+  aside #amount2 {
+    width: 46%;
+    color: #000000 !important;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    padding: 5px;
+    text-align: center;
+    margin: -5px;
+    margin-left: 27px;
+    margin-top: 11px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px; }
   aside .checkbox input[type="checkbox"] {
     right: 0; }
   aside .checkbox label {

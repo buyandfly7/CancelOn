@@ -69,3 +69,13 @@ h3 {
   text-align: right;
   text-decoration: line-through;
 }
+
+.copy {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #7a818e;
+  font-family: 'Montserat', sans-serif;
+}

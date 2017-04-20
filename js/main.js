@@ -117,11 +117,29 @@ $(function() {
     max: 500,
     values: [ 75, 300 ],
     slide: function( event, ui ) {
-      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      $( "#amount1" ).val( "$" + ui.values[ 0 ] );
+      $( "#amount2" ).val( "$" + ui.values[ 1 ] );
     }
   });
-  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+  $( "#amount1" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ));
+  $( "#amount2" ).val( "$" + $( "#slider-range" ).slider( "values", 1 ));
+
+
+  $( "#amount1" ).on('change', function(){
+    if ($( "#amount1" ).val().indexOf("$") >= 0){
+      $( "#slider-range" ).slider( "values", 0 , $( "#amount1" ).val().slice(1));
+    } else {
+      $( "#slider-range" ).slider( "values", 0 , $( "#amount1" ).val());
+    }
+  });
+  $( "#amount2" ).on('change', function(){
+    if ($( "#amount2" ).val().indexOf("$") >= 0){
+      $( "#slider-range" ).slider( "values", 1 , $( "#amount2" ).val().slice(1));
+    } else {
+      $( "#slider-range" ).slider( "values", 1 , $( "#amount2" ).val());
+    }
+  });
 
   $('.grid').isotope({
     itemSelector: '.grid-item',
@@ -147,6 +165,7 @@ $(function() {
       $('#map').show();
       $('.check').css('width', '52.3%');
       $('.grid-item').css('width', '49%');
+      $('.exclusive').css('width', '54.17841374874%');
       $('.grid').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'masonry',
@@ -169,6 +188,7 @@ $(function() {
       $('#map').hide();
       $('.check').css('width', '83.2%');
       $('.grid-item').css('width', '32%');
+      $('.exclusive').css('width', '84.33%');
       $('.grid').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'masonry',

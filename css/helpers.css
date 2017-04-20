@@ -30,6 +30,10 @@
   background-color: #242830;
 }
 
+.black {
+  background-color: #000000;
+}
+
 .underline {
   text-decoration: underline !important;
 }
@@ -146,7 +150,7 @@
 }
 
 .stars li i.fa-star {
-  color: #e39d47;
+  color: #f99e3e;
   font-size: 14px;
   margin-left: 1px;
   margin-right: 3px;
@@ -234,7 +238,7 @@ i.fa-dot-circle-o {
   margin-right: 15px;
   float: right;
   height: 100%;
-  min-height: 1200px;
+  min-height: 1500px;
   background-color: grey;
 }
 
@@ -376,17 +380,19 @@ footer .form-control::-moz-placeholder {
 
 footer .social {
   float: right;
-  margin-top: 40px;
+  margin-top: 25px;
+  margin-right: 8px;
 }
 
 footer .social li {
   float: left;
   border: 2px solid #00b9f1;
-  width: 30px;
+  width: 43px;
   text-align: center;
   border-radius: 50%;
   padding: 2px;
-  margin: 7px;
+  margin: 3.9px;
+  font-size: 23px;
 }
 
 footer .social li:hover {
@@ -394,16 +400,21 @@ footer .social li:hover {
 }
 
 footer .social li a {
+  font-size: 23px;
   padding: 3px;
 }
 
 footer .social li a i {
+  font-size: 23px;
   color: #ffffff;
 }
 
 footer .navbar-text {
   color: #ffffff;
-  margin-top: 40px;
+  margin-top: 38px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Montserat', sans-serif;
 }
 
 footer .widget-container h1 {
@@ -411,20 +422,69 @@ footer .widget-container h1 {
   font-size: 26px;
 }
 
+footer .widget-container li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 footer .widget-container li a {
   color: #ffffff;
-  font-size: 12px !important;
+  font-size: 14px;
 }
 
 footer .widget-container li a:hover {
   text-decoration: underline !important;
 }
 
+footer .navy .widget-container li {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+footer .navy .widget-container li a {
+  color: #b8b8b8;
+  font-size: 12px !important;
+}
+
+footer .navy .widget-container li a:hover {
+  text-decoration: underline !important;
+}
+
 aside {
+  font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   width: 14.7%;
   margin-left: 15px;
   float: left;
+}
+
+aside #amount1 {
+  float: left;
+  width: 46%;
+  color: #000000 !important;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  padding: 5px;
+  text-align: center;
+  margin: -5px;
+  margin-left: -4px;
+  margin-top: 11px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+}
+
+aside #amount2 {
+  width: 46%;
+  color: #000000 !important;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  padding: 5px;
+  text-align: center;
+  margin: -5px;
+  margin-left: 27px;
+  margin-top: 11px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
 }
 
 aside .checkbox input[type="checkbox"] {
