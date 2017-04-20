@@ -128,7 +128,7 @@ $(function() {
     layoutMode: 'masonry',
     masonry: {
       columnWidth: '.grid-item',
-      gutter: 10
+      gutter: 15
     }
   });
 
@@ -137,7 +137,7 @@ $(function() {
     layoutMode: 'masonry',
     masonry: {
       columnWidth: '.list-item',
-      gutter: 10
+      gutter: 15
     }
   });
 
@@ -145,7 +145,7 @@ $(function() {
     if (document.getElementById('myonoffswitch').checked) {
 
       $('#map').show();
-      $('.check').attr('class', 'col-md-6 check');
+      $('.check').css('width', '52.3%');
       $('.grid-item').css('width', '49%');
       $('.grid').isotope({
         itemSelector: '.grid-item',
@@ -153,7 +153,7 @@ $(function() {
         masonry: {
           // use outer width of grid-sizer for columnWidth
           columnWidth: '.grid-item',
-          gutter: 10
+          gutter: 15
         }
       });
 
@@ -162,12 +162,12 @@ $(function() {
         layoutMode: 'masonry',
         masonry: {
           columnWidth: '.list-item',
-          gutter: 10
+          gutter: 15
         }
       });
     } else {
       $('#map').hide();
-      $('.check').attr('class', 'col-md-10 check');
+      $('.check').css('width', '83.2%');
       $('.grid-item').css('width', '32%');
       $('.grid').isotope({
         itemSelector: '.grid-item',
@@ -175,7 +175,7 @@ $(function() {
         masonry: {
           // use outer width of grid-sizer for columnWidth
           columnWidth: '.grid-item',
-          gutter: 10
+          gutter: 15
         }
       });
 
@@ -184,7 +184,7 @@ $(function() {
         layoutMode: 'masonry',
         masonry: {
           columnWidth: '.list-item',
-          gutter: 10
+          gutter: 15
         }
       });
     }
@@ -209,7 +209,7 @@ $(function() {
       layoutMode: 'masonry',
       masonry: {
         columnWidth: '.list-item',
-        gutter: 10
+        gutter: 15
       }
     });
   });
@@ -227,7 +227,7 @@ $(function() {
       masonry: {
         // use outer width of grid-sizer for columnWidth
         columnWidth: '.grid-item',
-        gutter: 10
+        gutter: 15
       }
     });
   });

@@ -63,6 +63,39 @@
   img{
     width: 100%;
   }
+  .stars{
+    margin-top: -5px;
+  }
+  .small-text{
+    font-weight: 400;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    letter-spacing: 0.1px;
+  }
+  .extra-small{
+    margin-left: -2px;
+    text-decoration: underline!important;
+  }
+  .price{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .trip{
+    float: left;
+    width: 30px;
+    margin-left: 14px;
+    img{
+      margin-top: 6px;
+    }
+  }
+  .booked{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    span{
+      font-weight: 700;
+    }
+  }
 }
 .stars{
   width: 100%;
@@ -72,23 +105,23 @@
     float: left;
     i.fa-star{
       color: #e39d47;
-      font-size: 14pt;
-
+      font-size: 14px;
+      margin-left: 1px;
+      margin-right: 3px;
     }
   }
 }
 .count{
   float: right;
   background: #54aee1;
-  color: white;
-  padding: 7.6px;
+  color: #fff;
+  padding: 7px 7px 6px 7.6px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   line-height: 4px;
-  margin-top: 0px;
-  padding-right: 11px;
+  margin-top: 2px;
   i{
-    font-size: 12pt;
+    font-size: 12px;
     color: white;
     margin-right: 10px;
 
@@ -112,12 +145,12 @@
   .views {
     float: right;
     background: #7fc0fd;
-    padding: 5.5px 20px;
-    color: white;
-    text-transform: uppercase;
+    padding: 2.5px 20px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    margin-right: 6px;
+    margin-top: 2px;
+    margin-right: -9px;
+    color: #ffffff;
   }
 }
   .reviews{
@@ -127,6 +160,9 @@
     li{
       display: inline-block;
       float: left;
+      margin-right: 2px;
+      margin-top: 3px;
+      margin-left: 1.5px;
     }
   }
 
@@ -140,7 +176,7 @@
     li{
       display: inline-block;
       float: left;
-      padding: 3px;
+      margin-right: 10px;
       i{
         font-size: 10pt;
         color: #6bb7bf;
@@ -148,7 +184,9 @@
     }
   }
   #map {
-    width: 100%;
+    width: 29.2%;
+    margin-right: 15px;
+    float: right;
     height: 100%;
     min-height: 1200px;
     background-color: grey;
@@ -159,8 +197,10 @@
     background-color: #e8eaed;
   }
   .exclusive{
-    width: 100%;
+    width: 54.17841374874%;
     background-color: #55c1ff;
+    float: right;
+    margin-top: 108px;
     .price{
       font-size:11pt;
       .regular-text{
@@ -192,17 +232,25 @@
       font-size: 18pt;
       font-family: 'Roboto', sans-serif;
     }
-    h3,h4{
+    h4{
       color: white;
       text-align: center;
       text-transform: uppercase;
+      font-weight: 700;
+      font-size: 22px;
+      font-family: 'Roboto', sans-serif;
     }
     h3{
-      width: 180px;
+      width: 145px;
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
-      padding: 5px;
-      margin: 15px auto;
+      padding: 9px;
+      margin: 19px auto;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
     }
     .img-responsive{
       width: 100%;
@@ -527,4 +575,11 @@
   .big-text{
     margin-left: -5px;
   }
+}
+.check{
+  width: 52.3%;
+  display: block;
+  float: left;
+  margin-left: 15px;
+  margin-top: 5px;
 }
